@@ -66,6 +66,15 @@ app.get("/api/year/:year", (req, res) => {
 
 })
 
+// Hacer una ruta para mostrar las ventas por país y año:
+// http://localhost:12345/country/Italia/year/2024
+
+// Hacer una ruta para mostrar las ventas totales por paises
+// http://localhost:12345/total
+// debe devolver algo así:
+// [ {pais: "Italia", total: 1234}, {pais:"Francia", "total": 1087}] 
+
+
 // Mensaje para las rutas no definidas anteriormente:
 // Error 404. Página no encontrada.
 app.use((req, res) => {
